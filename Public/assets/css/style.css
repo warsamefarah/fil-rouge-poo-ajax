@@ -571,7 +571,7 @@ section div {
     font-size: 1.5rem;
 }
 
-.loginForm input[type=email], .loginForm input[type=password] {
+.loginForm input[type=email], .loginForm input[type=password], .loginForm input[type=text] {
     background-color: transparent;
     font-family: Montserrat, sans-serif;
     border: none;
@@ -580,7 +580,7 @@ section div {
     color: #edf6f9;
 }
 
-.loginForm .email, .loginForm .pass {
+.loginForm .pseudo, .loginForm .email, .loginForm .pass {
     border-bottom: 2px solid #edf6f9;
 }
 

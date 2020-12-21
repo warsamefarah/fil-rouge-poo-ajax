@@ -12,9 +12,9 @@ include "head.php";
             <div class="loginbox">
                 <form action="" class="loginForm">
                     <h1>Connectez-vous</h1>
-                    <div class="email">
+                    <div class="pseudo">
                         <i class="fas fa-user"></i>
-                        <input type="email" id="email" placeholder="Email" autocomplete="none">
+                        <input type="text" id="text" placeholder="Pseudo" autocomplete="none">
                     </div>
                     <div class="pass">
                         <i class="fas fa-lock"></i>
