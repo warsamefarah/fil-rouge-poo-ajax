@@ -1,0 +1,730 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    outline: none;
+}
+
+/* Barre de navigation */
+
+#logo {
+    width: 200px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    filter: drop-shadow(-2px 2px #00000060);
+}
+
+#logo:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition-duration: 0.2s;
+}
+
+header {
+    background-color: #475b5a;
+    width: 100%;
+    height: 100px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 25px 0 0 30px;
+}
+
+.navicon {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    color: #edf6f9;
+}
+
+nav li {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li:hover {
+    opacity: 0.5;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition-duration: 0.2s;
+}
+
+nav li a {
+    color: #edf6f9;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Montserrat, sans-serif;
+}
+
+.chkbtn {
+    font-size: 30px;
+    color: #edf6f9;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #475b5a;
+    height: 100px;
+}
+
+footer p {
+    font-family: Montserrat, sans-serif;
+    color: #edf6f9;
+    text-align: center;
+}
+
+/* Page d'accueil */
+
+.parallax1 h1 {
+    font-family: Montserrat, sans-serif;
+    font-weight: 900;
+    color: #edf6f9;
+    text-align: center;
+    padding-top: 30vh;
+    animation: fadeIn ease 1s;
+}
+
+#divbtnh1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.btnh1 {
+    padding: 20px 50px;
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 20px;
+    animation: fadeIn ease 1s;
+}
+
+.btnh1:hover {
+    cursor: pointer;
+    background-color: rgb(0, 110, 255);
+    color: #edf6f9;
+    transition-duration: 0.2s;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+.parallax1 {
+    height: 90vh;
+    background-image: url(../img/fond2.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.parallax1 h3 {
+    font-family: Montserrat, sans-serif;
+    color: #edf6f9;
+    text-align: center;
+    font-size: 1rem;
+    padding-top: 50px;
+    opacity: 0;
+    animation: moveIn ease 1s 0.5s forwards;
+}
+
+.separator {
+    height: 100px;
+    background-color: #475b5a;
+}
+
+.separator h2 {
+    font-family: Montserrat, sans-serif;
+    color: #edf6f9;
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 30px;
+}
+
+.parallax2 {
+    height: 90vh;
+    background-image: url(../img/fond3.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.parallax2 h3 {
+    font-family: Montserrat, sans-serif;
+    color: #edf6f9;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.rulesarea {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 60px;
+}
+
+.rules {
+    background-color: #edf6f9b9;
+    border-radius: 20px;
+    width: clamp(200px, 300px, 400px);
+    height: 230px;
+    font-family: Montserrat, sans-serif;
+    font-weight: bolder;
+    color: rgb(59, 59, 59);
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 20px;
+}
+
+.rules h4 {
+    padding: 0 1rem;
+}
+
+.rules i {
+    font-size: 2rem;
+    padding-top: 2rem;
+}
+
+/* Page de sondages */
+
+.bgpoll {
+    background-image: url(../img/fond1.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.bgpoll h1 {
+    font-family: Montserrat, sans-serif;
+    font-weight: 900;
+    color: #edf6f9;
+    text-align: center;
+    padding-top: 10vh;
+    animation: moveIn ease 0.5s;
+}
+
+.bgpoll p {
+    font-family: Montserrat, sans-serif;
+    font-size: 1.2rem;
+    color: #000;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.pollarea {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 60px;
+}
+
+.pollarea a {
+    text-decoration: none;
+}
+
+.polls {
+    background-color: #edf6f96e;
+    border-radius: 20px;
+    width: 200px;
+    height: 200px;
+    font-family: Montserrat, sans-serif;
+    font-weight: bolder;
+    color: rgb(59, 59, 59);
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 50px;
+}
+
+.polls:hover {
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.polls:active {
+    background-color: #edf6f9;
+}
+
+/* Page de sondage - héros */
+
+.pollform {
+    text-align: center;
+    padding: 60px 100px 0 100px;
+}
+
+.option {
+    height: 50px;
+    background-color: #edf6f96e;
+    border-radius: 20px;
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 50px;
+    animation: moveIn ease 1s;
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.option input {
+    opacity: 0;
+}
+
+.option label:hover {
+    cursor: pointer;
+}
+
+.option:hover {
+    background-color: #edf6f9c4;
+    transition: 0.2s;
+}
+
+#popupContainer {
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.493);
+}
+
+#popup {
+    position: fixed;
+    width: clamp(200px, 30%, 80%);
+    height: clamp(200px, 10%, 30%);
+    font-family: Montserrat, sans-serif;
+    color: #19191a;
+    background-color: #edf6f9;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+    flex-flow: column;
+    margin-top: 10%;
+    border-radius: 20px;
+}
+
+#popup form {
+    margin: 1.1rem 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+}
+
+#popup input {
+    background-color: transparent;
+    border: 1px solid #19191a;
+}
+
+.popupbtn {
+    background-color: #19191a;
+    color: #edf6f9;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 10px;
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 20px;
+}
+
+.popupbtn:hover {
+    background-color: rgb(0, 110, 255);
+    transition-duration: 0.2s;
+}
+
+.moveout {
+    opacity: 0;
+    transition: opacity ease 1.5s;
+}
+
+.good {
+    background-color: #00ff006e;
+    transition: 0.2s ease 0.1s;
+}
+
+.bad {
+    background-color: #ff00006e;
+    transition: 0.2s ease 0.1s;
+}
+
+section {
+    height: 35vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section div {
+    height: fit-content;
+    width: 80vw;
+    padding: 2rem;
+    background-color: #edf6f969;
+    border-radius: 20px;
+    transform: translateX(150%);
+}
+
+.resultsshow {
+    transform: translateX(0);
+    transition: 0.5s ease;
+}
+
+/* Page des résultats */
+
+.bgresults {
+    background-image: url(../img/fond4.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.bgresults h1 {
+    font-family: Montserrat, sans-serif;
+    font-weight: 900;
+    color: #edf6f9;
+    text-align: center;
+    padding-top: 10vh;
+    animation: moveIn ease 0.5s;
+}
+
+.resultsarea {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 60px;
+    width: 100%;
+}
+
+.resultsarea a {
+    text-decoration: none;
+}
+
+.ranking {
+    background-color: #edf6f96e;
+    border-radius: 20px;
+    width: 200px;
+    height: 200px;
+    font-family: Montserrat, sans-serif;
+    font-weight: bolder;
+    color: rgb(59, 59, 59);
+    text-align: center;
+    padding-top: 50px;
+}
+
+.ranking:hover {
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.ranking:active {
+    background-color: #edf6f9;
+}
+
+/* Page des résultats - héros */
+
+.bgresults h2 {
+    font-family: Montserrat, sans-serif;
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: #edf6f9;
+    text-align: center;
+    padding-top: 10vh;
+    animation: moveIn ease 0.5s;
+}
+
+.bgresults>div {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress {
+    background: rgba(255,255,255,0.1);
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    padding: 0 5px;
+    margin-top: 1.5rem;
+    display: flex;
+    height: 40px;
+    width: clamp(300px, 40%, 50%);
+}
+
+.progress-bar1 {
+    animation: load1 2s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 100px;
+    background: #fff;
+    height: 30px;
+    width: 0;
+}
+
+.progress-bar2 {
+    animation: load2 2s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 100px;
+    background: #fff;
+    height: 30px;
+    width: 0;
+}
+
+.progress-bar3 {
+    animation: load3 2s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 100px;
+    background: #fff;
+    height: 30px;
+    width: 0;
+}
+
+.progress p {
+    font-family: Montserrat, sans-serif;
+    color: #edf6f9;
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 10px;
+}
+
+/* Page de connexion */
+
+.bglogin {
+    background-image: url(../img/fond5.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.bglogin h1 {
+    font-family: Montserrat, sans-serif;
+    font-weight: 900;
+    color: #edf6f9;
+    text-align: center;
+    padding-top: 10vh;
+}
+
+.loginbox {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.loginForm {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: space-around;
+    padding: 4em;
+    width: fit-content;
+    color: #edf6f9;
+    animation: moveIn ease 0.5s;
+}
+
+.loginForm i {
+    padding-right: 1rem;
+    font-size: 1.5rem;
+}
+
+.loginForm input[type=email], .loginForm input[type=password] {
+    background-color: transparent;
+    font-family: Montserrat, sans-serif;
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    color: #edf6f9;
+}
+
+.loginForm .email, .loginForm .pass {
+    border-bottom: 2px solid #edf6f9;
+}
+
+.loginForm input::placeholder {
+    text-transform: uppercase;
+    color: #edf6f9;
+}
+
+.loginForm input[type=submit] {
+    padding: 0.8rem 1.75rem;
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 1.3rem;
+    outline: none;
+}
+
+.loginForm input[type=submit]:hover {
+    cursor: pointer;
+    background-color: rgb(0, 110, 255);
+    color: #edf6f9;
+    transition-duration: 0.2s;
+}
+
+.loginForm p {
+    font-family: Montserrat, sans-serif;
+}
+
+.loginForm p a {
+    color: white;
+}
+
+@keyframes fadeIn{
+    0% {
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes moveIn {
+    0% {
+        opacity: 0;
+        transform: translateY(200px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes load1 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 10%;
+    }
+}
+
+@keyframes load2 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 22%;
+    }
+}
+
+@keyframes load3 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 68%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    /* Nav bar */
+
+    .chkbtn {
+        display: block;
+        margin: 0;
+        position: absolute;
+        top: 35px;
+        right: 30px;
+        z-index: 100;
+    }
+
+    .chkbtn:active {
+        transform: scale(1.1);
+        opacity: 0.5;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: -100%;
+        right: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        background: #5e7977;
+        transition: 0.5s;
+        z-index: 100;
+    }
+
+    nav ul.show {
+        top: 0;
+    }
+
+    /* Page d'accueil */
+
+    .rulesarea {
+        display: flex;
+        flex-flow: wrap;
+    }
+
+    .rules {
+        width: 200px;
+    }
+
+    /* Page de sondages */
+
+    .bgpoll {
+        height: 110vh;
+    }
+
+    .pollarea {
+        display: flex;
+        flex-flow: wrap;
+    }
+
+    /* Page de résultats */
+
+    .resultsarea {
+        display: flex;
+        flex-flow: wrap;
+    }
+}
